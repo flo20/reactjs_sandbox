@@ -1,4 +1,4 @@
-.App {
+/*.App {
   text-align: center;
 }
 
@@ -35,4 +35,23 @@
   to {
     transform: rotate(360deg);
   }
+}*/
+
+.likes {
+  width: 200px;
+  height: 200px;
+  border-radius: 20%;
+  box-shadow: 0 0 5px rgb(158, 157, 157);
+  padding: 1rem;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.even {
+  background-color: skyblue;
+}
+
+.odd {
+  background-color: springgreen;
 }
