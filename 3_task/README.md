@@ -69,4 +69,4 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 ## Like Counter Screenshot
 
-![3_task screenshot](./public/3_task screenshot.png?raw=true)
+![3_task screenshot](./public/3_task.png?raw=true)
