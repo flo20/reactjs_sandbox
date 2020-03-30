@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
+import Header from "./Header/Header";
+import Footer from "./Footer/Footer";
 
 class App extends Component {
   state = {
@@ -20,7 +22,8 @@ class App extends Component {
   };
   render() {
     return (
-      <div>
+      <div className="back">
+        <Header />
         <h1
           className={
             this.state.likes === 0
@@ -32,9 +35,10 @@ class App extends Component {
         >
           Total Likes: {this.state.likes}
         </h1>
-        <button onClick={this.addHandler}>Add like </button>
-        <button onClick={this.removeHandler}>Remove like </button>
+        <button onClick={this.addHandler}>Add like</button>
+        <button onClick={this.removeHandler}>Remove like</button>
         <button onClick={this.resetHandler}>Reset likes</button>
+        <Footer />
       </div>
     );
   }
