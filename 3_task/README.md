@@ -69,4 +69,4 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 ## Like Counter Screenshot
 
-![3_task screenshot](file:///Users/flo/Documents/Desktop/Screenshot%202020-03-30%20at%2023.17.43.png?raw=true)
+![3_task screenshot](./public/3_task screenshot.png?raw=true)
