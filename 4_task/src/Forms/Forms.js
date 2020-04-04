@@ -18,7 +18,7 @@ const Forms = () => {
       </p>
       <p>
         Message:
-        <input type="text" />
+        <textarea></textarea>
       </p>
     </div>
   );
