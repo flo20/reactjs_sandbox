@@ -6,29 +6,45 @@ import Views from "./Views/Views";
 class App extends Component {
   state = {
     details: [
-      { first: "Firstname :" },
-      { last: "Lastname :" },
-      { phone: "Phone number :" },
-      { mess: "Message :" },
+      { first: "Firstname :", disp: "" },
+      { last: "Lastname :", ldisp: "" },
+      { phone: "Phone number :", pdisp: "" },
+      { mess: "Message :", mdisp: "" },
     ],
+  };
+
+  changeHandler = (event) => {
+    let nam = event.target.name;
+    let val = event.target.value;
+    this.setState({ [nam]: val });
   };
 
   render() {
     return (
       <div>
         <Forms />
-
-        <Views first={this.state.details[0].first} />
-        <input type="text" placeholder="Firstname here" className="display" />
-
-        <Views last={this.state.details[1].last} />
-        <input type="text" placeholder="Lastname here" className="display" />
-
-        <Views phone={this.state.details[2].phone} />
-        <input type="text" placeholder="Phonenumber" className="display" />
-
-        <Views mess={this.state.details[3].mess} />
-        <textarea placeholder="Message" className="display"></textarea>
+        <form className="fwrap">
+          <p />
+          FirstName:{" "}
+          <input type="text" onChange={this.changeHandler} name="disp" />
+          <p />
+          LastName:{" "}
+          <input type="text" onChange={this.changeHandler} name="ldisp" />
+          <p />
+          PhoneNumber:{" "}
+          <input type="text" onChange={this.changeHandler} name="pdisp" />
+          <p />
+          Message:{" "}
+          <textarea type="text" onChange={this.changeHandler} name="mdisp" />
+        </form>
+        <body className="view">
+          <h1>CopyCat</h1>
+          <p> First name: {this.state.disp}</p>
+          <p> Last name: {this.state.ldisp}</p>
+          <p> Phone Number: {this.state.pdisp}</p>
+          <p> Message: {this.state.mdisp}</p>
+        </body>
+        <Views />
       </div>
     );
   }
