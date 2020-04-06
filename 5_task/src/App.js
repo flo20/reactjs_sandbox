@@ -24,7 +24,7 @@ class App extends Component {
       current: nextActive,
     });
     this.timer = setTimeout(this.next, this.pace);
-    console.log("active circle", this.state.current);
+    console.log("activated circle", this.state.current);
   };
 
   clickHandler = (circleID) => {
@@ -44,15 +44,32 @@ class App extends Component {
       <div className="wrap">
         <div className="text_wrap">
           <h1>Catch me if you can!</h1>
-          <p>Score: 0</p>
+          <p>Score: {this.state.score}</p>
         </div>
 
         <main>
-          <Circle click={this.clickHandler.bind(this, 1)} />
-          <Circle click={this.clickHandler.bind(this, 2)} />
-          <Circle click={this.clickHandler.bind(this, 3)} />
-          <Circle click={this.clickHandler.bind(this, 4)} />
+          <Circle
+            active={this.state.current === 1}
+            mydefaultcolor="purple"
+            click={this.clickHandler.bind(this, 1)}
+          />
+          <Circle
+            active={this.state.current === 2}
+            mydefaultcolor="green"
+            click={this.clickHandler.bind(this, 2)}
+          />
+          <Circle
+            active={this.state.current === 3}
+            mydefaultcolor="blue"
+            click={this.clickHandler.bind(this, 3)}
+          />
+          <Circle
+            active={this.state.current === 4}
+            mydefaultcolor="brown"
+            click={this.clickHandler.bind(this, 4)}
+          />
         </main>
+
         <div className="btn_wrap">
           <button onClick={this.startHandler}>Start</button>
           <button onClick={this.endHandler}>End</button>

@@ -1,13 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap");
 body {
   margin: 0;
 
-  background-image: linear-gradient(
-    to right,
-    #6573ff,
-    #6f72f7,
-    #7872ef,
-    #a86ec8
-  );
-  font-family: "Press Start 2P", cursive;
+  background-color: aquamarine;
+  font-family: "Rajdhani", sans-serif;
 }
