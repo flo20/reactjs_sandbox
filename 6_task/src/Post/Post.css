@@ -1,0 +1,16 @@
+.posts {
+  display: grid;
+  align-items: flex-start;
+  grid-template-columns: repeat(3, 0.5fr);
+  grid-gap: 1rem;
+  margin: 1rem;
+}
+
+.post {
+  background-color: rgb(255, 254, 254);
+  border-radius: 5px;
+  box-shadow: 0 0 20px grey;
+  border: 1px solid rgb(126, 124, 124);
+  padding: 20px;
+  text-align: justify;
+}
