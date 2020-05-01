@@ -1,0 +1,11 @@
+.about_container {
+  display: flex;
+}
+
+.about_pic {
+  margin: 2rem;
+}
+
+.content {
+  padding: 2rem;
+}

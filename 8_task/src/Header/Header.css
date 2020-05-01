@@ -1,0 +1,13 @@
+.head,
+.headers,
+.links {
+  display: flex;
+}
+
+.li,
+.links {
+  text-decoration: none;
+  color: grey;
+
+  padding: 5px;
+}
