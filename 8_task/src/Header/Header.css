@@ -4,10 +4,10 @@
   display: flex;
 }
 
-.li,
+li,
 .links {
   text-decoration: none;
   color: grey;
-
+  list-style: none;
   padding: 5px;
 }

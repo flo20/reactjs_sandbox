@@ -1,47 +1,20 @@
 import React from "react";
 import "./Header.css";
-import { Link } from "react-router-dom";
+
+//import { NavLink } from "react-router-dom";
+import { Nav, Navbar } from "react-bootstrap";
 
 const Header = () => {
-  const logo = {
-    textDecoration: "none",
-    padding: "22px",
-  };
   return (
-    <div className="head">
-      <Link to="/home" style={logo}>
-        Florence
-      </Link>
-      <div className="headers">
-        <nav>
-          <ul>
-            <li>
-              <Link to="/home" className="links">
-                Home
-              </Link>
-            </li>
-          </ul>
-        </nav>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/about" className="links">
-                About
-              </Link>
-            </li>
-          </ul>
-        </nav>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/blog" className="links">
-                Blog
-              </Link>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </div>
+    <Navbar bg="light" variant="light">
+      <Nav.Link href="/home">Florence Anipa</Nav.Link>
+      <Nav className="mr-auto">
+        <Nav.Link href="/home">Home</Nav.Link>
+        <Nav.Link href="/about">About me</Nav.Link>
+        <Nav.Link href="/blog">Blog</Nav.Link>
+        <Nav.Link href="/newpost">Newpost</Nav.Link>
+      </Nav>
+    </Navbar>
   );
 };
 
